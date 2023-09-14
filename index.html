@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel's Site</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <style>
+      #pic {
+        -webkit-filter: invert(100%); /* Safari/Chrome */
+        filter: invert(100%);
+      }
+      .navbar-brand {
+        font-weight: 600;
+        font-size:x-large;
+      }
+      #custom-cards {
+        display: flex;
+      }
+      footer {
+        bottom: 0;
+        width: 100%;
+        height: 2.5rem;      
+      }
+      .bg-body-tertiary {
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+      </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img id="pic" src="Index-Images/Person-Bounding.svg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top"> Daniel's Site </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">My CV</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">My Hobbies</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Examples
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      
+        
+      <div class="container px-4 py-5" id="custom-cards">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('Index-Images/Card_BG.jpg'); background-size:cover; ">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h1>My CV</h1>
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1">Working and learning</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto" id="pic">
+                    <img src="Index-Images/Working.svg" alt=" My  CV " width="32" height="32">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('Index-Images/Card_BG.jpg'); background-size:cover;">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h1>My Hobbies</h1>
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1">My Hobbies in my free time</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto" id="pic">
+                    <img src="Index-Images/Hobbies.svg" alt=" My  CV " width="32" height="32">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('Index-Images/Card_BG.jpg'); background-size:cover;">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h1>My CV</h1>
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1">Working and learning</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto" id="pic">
+                    <img src="Index-Images/Working.svg" alt=" My  CV " width="32" height="32">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <footer>
+      <a href="https://www.freepik.com/free-vector/freelancer-working-laptop-her-house_11879394.htm#query=working&position=17&from_view=search&track=sph">Image by jcomp</a> on Freepik
+      <br>All rights reserved to Daniel Wortman <a href="mailto:vertmi@gmail.com">vertmi@gmail.com</a> 
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
