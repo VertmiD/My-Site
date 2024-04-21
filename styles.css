@@ -1,7 +1,8 @@
-body {background-color: beige;};
+body {
+  background-color: #c4c4c4;
+  }
 
 .topnav {
-    background-color: #333;
     overflow: hidden;
   }
   
@@ -9,8 +10,10 @@ body {background-color: beige;};
     text-align: center;
     padding: 5vh; /*vh=height from screen (total=100vh)*/
     font-weight: bold;
+    font-size: xx-large;
+    font-family: Comic Sans MS, Comic Sans, cursive;
     color: whitesmoke;
-    font-family: 'Brush Script MT', cursive;
+  /*  font-family: 'Brush Script MT', cursive;*/
 
   }
 
@@ -30,8 +33,9 @@ body {background-color: beige;};
   .topnav a{
     color: white;
     padding: 5px 1rem; /*Nav Bar space between elements*/
-    font-family: "Lucida Console";
+    font-family: Comic Sans MS, Comic Sans, cursive;
     font-weight: bold;
+    text-decoration: none;
   }
   
   /* Change the color of links when mouse hover on them */
