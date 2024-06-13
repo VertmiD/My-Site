@@ -60,7 +60,7 @@ body {
   /* Add color and style to the main text */
   .text {
     color:#333;
-    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-family: Comic Sans MS;
   }
 
   /* Set the links icons as row - flex  */
