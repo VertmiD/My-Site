@@ -1,8 +1,3 @@
-  body {background-color: beige;};
-
-  .topnav {
-    background-color: #333;
-  }
 
 body {
   background-color: #c4c4c4;
@@ -10,27 +5,26 @@ body {
 
 .topnav {
     overflow: hidden;
+    background-color: #333;
   }
   
   h1 {
     text-align: center;
-    padding: 5vh; /*vh=height from screen (total=100vh)*/
     font-weight: bold;
     font-size: xx-large;
     font-family: Comic Sans MS, Comic Sans, cursive;
     color: whitesmoke;
-  /*  font-family: 'Brush Script MT', cursive;*/
-
+    font-family: 'Brush Script MT', cursive;
   }
 
   /* Style the whole navigation bar */
   .topnav {
     float: none;
-    position: absolute;
-    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
-    transform: translate(-50%);
-    padding: 20vh, 10px;  /*vh=height from screen (total=100vh)*/
+    background-color:#33333300;
   }
 
   /* Style the links inside the navigation bar */
@@ -54,30 +48,31 @@ body {
     color: white;
   } 
 
-  .main {
-    float: none;
-    position: absolute;
-    left: 50%;
-    color: white;
-    transform: translate(-50%);
-  }
-
+  /* Set the main text & image as a row - flex */
   .container {
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     grid-template-columns: 2fr 1fr;
-    column-gap: 5px;
   }
 
+  /* Add color and style to the main text */
   .text {
     color:#333;
-    font-family: 'Brush Script MT', cursive;
+    font-family: Comic Sans MS, Comic Sans, cursive;
   }
 
-  .image {
-    border-radius: 50%;
-    max-height: 80%;
+  /* Set the links icons as row - flex  */
+  .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 10px;
   }
+
 
   /* Configure contacts icon shape*/
   .fa {
@@ -102,6 +97,11 @@ body {
 
   .fa-linkedin {
     background: #007bb5;
+    color: white;
+  }
+
+  .fa-envelope-o {
+    background: green;
     color: white;
   }
 
