@@ -1,15 +1,14 @@
-<<<<<<< HEAD
   body {background-color: beige;};
 
   .topnav {
     background-color: #333;
-=======
+  }
+
 body {
   background-color: #c4c4c4;
   }
 
 .topnav {
->>>>>>> 4148d5bfbbdd0d10e77e1440e2ca6be0fbe83c13
     overflow: hidden;
   }
   
