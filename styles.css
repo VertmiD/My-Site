@@ -1,114 +1,141 @@
 
 body {
   background-color: #c4c4c4;
-  }
+}
 
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: xx-large;
+  font-family: Comic Sans MS, Courier New;
+  color: whitesmoke;
+  font-family: 'Brush Script MT', cursive;
+}
+
+/* Style the whole navigation bar */
 .topnav {
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  h1 {
-    text-align: center;
-    font-weight: bold;
-    font-size: xx-large;
-    font-family: Comic Sans MS, Comic Sans, cursive;
-    color: whitesmoke;
-    font-family: 'Brush Script MT', cursive;
+  float: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a{
+  color: white;
+  padding: 5px 1rem; /*Nav Bar space between elements*/
+  font-family: Comic Sans MS, Courier New;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Change the color of links when mouse hover on them */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+} 
+
+.Home-img {
+  width: 5vh;
+  height: 5vh;
+  color: white;
+}
+
+/* Set the main text & image as a row - flex */
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 2cap;
+}
+
+/* Add color and style to the main text */
+.text {
+  color:#333;
+  font-family: Comic Sans MS, Courier New;
+}
+
+/* Set the links icons as row - flex  */
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 10px;
+}
+
+/* Configure contacts icon shape*/
+.fa {
+  padding: 15px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 20px;
+  border-radius: 50%;
+}
+
+/* Configure contacts icon shape*/
+.fa:hover {
+      opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-envelope-o {
+  background: green;
+  color: white;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+@media (min-height: 500px) {
+  .main-upper {
+    height: 30vh;
   }
 
-  /* Style the whole navigation bar */
   .topnav {
-    float: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    background-color:#33333300;
+    height: 27vh;
   }
+}
 
-  /* Style the links inside the navigation bar */
-  .topnav a{
-    color: white;
-    padding: 5px 1rem; /*Nav Bar space between elements*/
-    font-family: Comic Sans MS, Comic Sans, cursive;
-    font-weight: bold;
-    text-decoration: none;
+@media (max-height: 450px) {
+  .about {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden; 
   }
+}
 
-  /* Change the color of links when mouse hover on them */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    background-color: #04AA6D;
-    color: white;
-  } 
-
-  /* Set the main text & image as a row - flex */
+@media (max-width: 450px) {
   .container {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: 2fr 1fr;
+    flex-direction: column;
+    column-gap: 0cap;
   }
-
-  /* Add color and style to the main text */
-  .text {
-    color:#333;
-    font-family: Comic Sans MS;
-  }
-
-  /* Set the links icons as row - flex  */
-  .links {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: 2fr 1fr;
-    column-gap: 10px;
-  }
-
-
-  /* Configure contacts icon shape*/
-  .fa {
-    padding: 15px;
-    font-size: 20px;
-    width: 20px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 20px;
-    border-radius: 50%;
-  }
-  
-    /* Configure contacts icon shape*/
-  .fa:hover {
-        opacity: 0.7;
-  }
-  
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
-
-  .fa-linkedin {
-    background: #007bb5;
-    color: white;
-  }
-
-  .fa-envelope-o {
-    background: green;
-    color: white;
-  }
-
-  footer {
-    position: absolute;
-    bottom: 0;
-    height: 50px;
-    left: 50%;
-    transform: translate(-50%);
-  }
+}
